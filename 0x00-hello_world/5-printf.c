@@ -1,7 +1,8 @@
 #include <stdio.h>
-/*
- * main - simple main function print msg to standard output using printf
- * retun: 0 exit code
+
+/**
+ * main - simple main function the prints msg using `printf`
+ * Return: 0 exit code
  */
 int main(void)
 {
