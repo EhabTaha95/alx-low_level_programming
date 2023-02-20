@@ -1,26 +1,24 @@
-#include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
- * main - simple main function to determine whether number is positive or negative
- * Return: 0 exit code
+ * main - check if random number (n) is positive, negative or zero
+ *
+ * Return: 0
  */
 int main(void)
 {
 	int n;
+
 	srand(time(0));
-        n = rand() - RAND_MAX / 2;
-	if (n>0)
-	{
-		printf("the number is greater than 0: is positive\n");
-	}
-	else if (n=0)
-	{
-		printf("the number is 0: is zero\n");
-	}
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	printf("%d is positive\n", n);
+	else if (n < 0)
+	printf("%d is negative\n", n);
 	else
-	{
-		printf("the number is less than 0: is negative\n");
-	}
+	printf("%d is zero\n", n);
+
 	return (0);
 }
