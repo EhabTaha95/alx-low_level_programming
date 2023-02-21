@@ -12,8 +12,8 @@ void print_int(int n)
 	b = n % 10;
 	a = n / 10;
 
-	_putchar(a);
-	_putchar(b);
+	_putchar(a + 48);
+	_putchar(b + 48);
 }
 
 /**
