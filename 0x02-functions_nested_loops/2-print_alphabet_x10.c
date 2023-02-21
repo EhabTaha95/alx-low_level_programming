@@ -3,7 +3,7 @@
 /**
  * print_alphabet_x10 - print alphabet 10 times in lower case
  *
- * Return: 0 exit code
+ * Return: void
  */
 void print_alphabet_x10(void)
 {
@@ -17,5 +17,4 @@ void print_alphabet_x10(void)
 
 		_putchar('\n');
 	}
-	return (0);
 }
