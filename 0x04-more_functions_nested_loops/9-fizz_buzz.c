@@ -1,34 +1,24 @@
-# include "main.h"
 # include <stdio.h>
 
 /**
- * main - print numbers from 0 t0 100
- *
- * Return: write numbers
+ * main - print 0..100, with Fizz, Buzz for multiples of 3, 5
+ * Return: void
  */
 int main(void)
 {
-	int n;
+	int i;
 
-	for (n = 1; n <= 100; n++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (n % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		else if (n % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		else if (n % 15 == 0)
-		{
-			printf("FizzBuzz");
-		}
-		else
-		{
-		printf("%d", n);
-		}
-	putchar(' ');
+	if (i % 3 == 0)
+	printf("Fizz");
+	if (i % 5 == 0)
+	printf("Buzz");
+	if (i % 3 != 0 && i % 5 != 0)
+	printf("%d", i);
+
+	printf("%c", i < 100 ? ' ' : '\n');
 	}
-	putchar('\n');
+
+	return (0);
 }
