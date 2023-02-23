@@ -1,5 +1,5 @@
-# include <stdio.h>
 # include "main.h"
+# include <stdio.h>
 
 /**
  * main - print numbers from 0 t0 100
