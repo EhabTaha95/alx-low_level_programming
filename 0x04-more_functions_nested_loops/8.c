@@ -7,17 +7,23 @@
  */
 int main(void)
 {
-	int size = 2;
+	int size = 0;
 
 
 	if (size > 0)
 	{
-	int n;
+	int n, j;
+
+	for (j = 1; j <= size; j++)
+	{
 
 	for (n = 1; n <= size; n++)
 	{
 	putchar('#');
 	}
-	}
 	putchar('\n');
+	}
+	}
+	else
+		putchar('\n');
 }
