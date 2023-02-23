@@ -1,4 +1,5 @@
 # include <stdio.h>
+# include "main.h"
 
 /**
  * main - print numbers from 0 t0 100
@@ -8,7 +9,7 @@
 int main(void)
 {
 	int n;
-	
+
 	for (n = 1; n <= 100; n++)
 	{
 		if (n % 3 == 0)
