@@ -1,17 +1,18 @@
-# include "main.h"
+# include <stdio.h>
 
 /**
- * print_line - function that prints a straight line
+ * main - function that prints a straight line
  * @n: number of dash characters
  * Return: draws a straight line followed by new line
  */
-void print_line(int n)
+int main(void)
 {
+	int n = -4;
 
 	while (n > 0)
 	{
-	_putchar('_');
+	putchar('_');
 	n--;
 	}
-	_putchar('\n');
+	putchar('\n');
 }
