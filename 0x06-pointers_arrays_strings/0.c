@@ -30,7 +30,7 @@ int main(void)
 	{
 		destr[i + n] = src[n];
 	}
-	destr[i + n] = '\0';
+	destr[i + j] = '\0';
 
 	l = strlen(destr);
 
