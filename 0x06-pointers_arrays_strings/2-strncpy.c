@@ -1,22 +1,27 @@
-# include "main.h"
-
 /**
- * _strncpy - function that copy strings
- * @dest: destination string
- * @src: source string
- * @n: number of characters to be copied
- * Return: pointer ptr to destination
+ * _strncpy - copy string from @src to @dest with @n bytes limit
+ * @dest: the reference to copy to
+ * @src: the string to copy from
+ * @n: number of bytes to be copied from @src to @dest
+ * Description:
+ * if @dest is not large enough to hold the copy, @src will be truncated.
+ * Return: pointer to @dest
  */
-char *_strncpy(char *dest, char *src, int n)
+ char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0;
-	char *ptr = dest;
+	char *p = dest;
 
-	for (i = 0; src[i] != '\0' && i < n; i++)
-	{
-	*dest = src[i];
-	dest++;
-	}
-	*dest = '\0';
-	return (ptr);
+	/* copy from src to dest */
+	for (; *src && n > 0; src++, dest++, n--)
+	*dest = *src;
+
+	/* set new end of string */
+	if (!*src)
+	*dest = *src;
+
+	/* write null for remaining bytes if exists */
+	for (; n > 0; n--, dest++)
+	*dest = 0;
+
+	return (p);
 }
