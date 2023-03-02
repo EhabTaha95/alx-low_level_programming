@@ -24,17 +24,15 @@ int main(void)
 	int l;
 
 	printf("%s\n", dest);
-	char *destr = dest;
 
-	for (n = 0; n < j && src[n] != '\0'; n++)
+	for (n = 0; dest[n] != '\0'; n++)
+	{}
+	printf("%d\n", n);
+	for (l = 0; src[l] != '\0'; l++, n++)
 	{
-		destr[i + n] = src[n];
+		dest[n] = src[l];
 	}
-	destr[i + j] = '\0';
+	dest[n] = '\0';
 
-	l = strlen(destr);
-
-	printf("%d\n", l);
-
-	printf("%s\n", destr);
+	printf("%s\n", dest);
 }
